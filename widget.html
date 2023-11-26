@@ -17,16 +17,16 @@
 
         .widget {
             padding: 5px 5px ;
-            color: #FFFFFF;
+            color: #f8f8ff;
             display: flex;
             justify-content:center;
             align-items:center;
             flex-direction: column;
             max-width: 95%;
             margin: auto;
-            border: 3px solid #FFFFFF;
+            border: 3px solid #f8f8ff;
             border-radius: 5px;
-            box-shadow: 2px 2px 1px 0px #FFFFFF;
+            box-shadow: 2px 2px 1px 0px #f8f8ff;
 
         }
 
@@ -109,15 +109,15 @@ function dispalyGreetings(today){
     function dispalyDate(today) {  
        
         const days = ['(にちようび)', '(げつようび)', '(かようび)', '(すいようび)', '(もくようび)', '(きにょうび)', '(どようび)'];
-        const monthNames = ["いちがつ", "にがつ", "さんがつ", "しがつ", "ごがつ", "ろくがつ",
-  "しちがつ", "はちがつ", "くがつ", "じゅうがつ", "じゅういちがつ", "じゅうにがつ"
+        const monthNames = ["1", "2", "3", "4", "5", "6",
+  "7", "8", "9", "10", "11", "12"
 ];
 
         var dayName = days[today.getDay()];
         var monthName = monthNames[today.getMonth()];
         var date = today.getDate();
         var year = today.getFullYear();
-        document.getElementById('date').innerHTML =year+"年"+monthName+"|月"+date+"日"+dayName;
+        document.getElementById('date').innerHTML =year+"|年|"+monthName+"|月|"+date+"|日|"+dayName;
 
     }
 
